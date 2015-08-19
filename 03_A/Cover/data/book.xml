@@ -1,0 +1,397 @@
+<book>
+	<sections>
+		<section pagecount="2" name="Kapiteltrenner Projektsammlung" part="1">
+			<tag name="Kunst" />
+			<tag name="Corporate Design" />
+			<tag name="Architektur" />
+			<tag name="Installation" />
+		</section>
+		<section pagecount="2" name="Superformula">
+			<tag name="3D" />
+			<tag name="Meshes" />
+			<tag name="VVVV" />
+			<tag name="Organische Form" />
+		</section>
+		<section pagecount="2" name="Reflection">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="Rapid Prototyping" />
+			<tag name="Skulptur" />
+			<tag name="Kunst" />
+			<tag name="Processing" />
+		</section>
+		<section pagecount="2" name="One Week in the Life">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="Skulptur" />
+			<tag name="Kunst" />
+			<tag name="Processing" />
+		</section>
+		<section pagecount="2" name="Fundament">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="Skulptur" />
+			<tag name="Kunst" />
+			<tag name="Processing" />
+		</section>
+		<section pagecount="2" name="Gestalt">
+			<tag name="Video" />
+			<tag name="Animation" />
+			<tag name="Rekursion" />
+			<tag name="3D" />
+		</section>
+		<section pagecount="2" name="Aperiodic Symmetries">
+			<tag name="Architektur" />
+			<tag name="3D" />
+			<tag name="Rhino Scripting" />
+			<tag name="Skulptur" />
+		</section>
+		<section pagecount="2" name="Recursive Growth">
+			<tag name="Architektur" />
+			<tag name="3D" />
+			<tag name="Rhino Scripting" />
+			<tag name="Rekursion" />
+		</section>
+		<section pagecount="2" name="Planatonic Solids">
+			<tag name="Rekursion" />
+			<tag name="3D" />
+			<tag name="Organische Form" />
+			<tag name="Meshes" />
+		</section>
+		<section pagecount="2" name="Subdivided Pavillions">
+			<tag name="Architektur" />
+			<tag name="3D" />
+			<tag name="Processing" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="2" name="Der Wirklichkeitsschaum">
+			<tag name="Attraktoren" />
+			<tag name="Zufall und Rauschen" />
+			<tag name="Linienstruktur" />
+			<tag name="Kunst" />
+			<tag name="VVVV" />
+		</section>
+		<section pagecount="2" name="Ambushes">
+			<tag name="Zufall und Rauschen" />
+			<tag name="Linienstruktur" />
+			<tag name="Installation" />
+			<tag name="Kunst" />
+			<tag name="VVVV" />
+		</section>
+		<section pagecount="2" name="Subjektbeschleuniger">
+			<tag name="Kunst" />
+			<tag name="Installation" />
+			<tag name="Zufall und Rauschen" />
+			<tag name="Zeichnen" />
+			<tag name="VVVV" />
+		</section>
+		<section pagecount="2" name="Generative Typografie">
+			<tag name="Processing" />
+			<tag name="Typografie" />
+		</section>
+		<section pagecount="2" name="Growing Data">
+			<tag name="Datengrafik" />
+			<tag name="Processing" />
+			<tag name="Agenten" />
+			<tag name="Organische Form" />
+			<tag name="Zufall und Rauschen" />
+		</section>
+		<section pagecount="2" name="Similar Diversity">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="Linienstruktur" />
+			<tag name="Text" />
+			<tag name="VVVV" />
+			<tag name="Processing" />
+		</section>
+		<section pagecount="2" name="Archtonic">
+			<tag name="Skulptur" />
+			<tag name="Organische Form" />
+		</section>
+		<section pagecount="2" name="Segmentation and Symptom">
+			<tag name="Image Filter" />
+			<tag name="Rekursion" />
+			<tag name="Algorithmus" />
+			<tag name="Netzstruktur" />
+		</section>
+		<section pagecount="2" name="Reface - Portrait Sequencer">
+			<tag name="Installation" />
+			<tag name="Interaktion" />
+			<tag name="Video" />
+			<tag name="Echtzeit-Bilder" />
+		</section>
+		<section pagecount="2" name="Footfalls">
+			<tag name="Installation" />
+			<tag name="Interaktion" />
+			<tag name="Echtzeit-Bilder" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="2" name="Poetry on the Road">
+			<tag name="Corporate Design" />
+			<tag name="Text" />
+			<tag name="Datengrafik" />
+			<tag name="Typografie" />
+			<tag name="Processing" />
+		</section>
+		<section pagecount="2" name="Talysis II, Autotrophs">
+			<tag name="Rekursion" />
+			<tag name="VVVV" />
+			<tag name="Organische Form" />
+		</section>
+		<section pagecount="2" name="Delaunay Raster">
+			<tag name="Zeichnen" />
+			<tag name="Image Filter" />
+			<tag name="Scriptographer" />
+		</section>
+		<section pagecount="2" name="Tile Tool">
+			<tag name="Typografie" />
+			<tag name="Scriptographer" />
+			<tag name="Zeichnen" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="2" name="Sky-Catcher Visualizations">
+			<tag name="Video" />
+			<tag name="Installation" />
+			<tag name="Kunst" />
+			<tag name="Bildersammlung" />
+		</section>
+		<section pagecount="2" name="con texture de structure">
+			<tag name="Agenten" />
+			<tag name="Installation" />
+			<tag name="Zeichnen" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="2" name="Being not truthful">
+			<tag name="Netzstruktur" />
+			<tag name="Echtzeit-Bilder" />
+			<tag name="Installation" />
+			<tag name="Interaktion" />
+			<tag name="Kunst" />
+		</section>
+		<section pagecount="2" name="Casa da Musica">
+			<tag name="Corporate Design" />
+		</section>
+		<section pagecount="2" name="Type and Form">
+			<tag name="Typografie" />
+			<tag name="Skulptur" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="2" name="Faber Finds">
+			<tag name="Corporate Design" />
+		</section>
+		<section pagecount="2" name="genoTyp">
+			<tag name="Typografie" />
+			<tag name="Schriftkontur" />
+			<tag name="Genetische Algorithmen" />
+		</section>
+		<section pagecount="2" name="Evolving Logo">
+			<tag name="Genetische Algorithmen" />
+			<tag name="Corporate Design" />
+		</section>
+		<section pagecount="2" name="_grau">
+			<tag name="Kunst" />
+			<tag name="Video" />
+			<tag name="Animation" />
+			<tag name="Rekursion" />
+		</section>
+		<section pagecount="2" name="wellformed.eigenfactor">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="Linienstruktur" />
+			<tag name="Baumdiagramme" />
+		</section>
+		<section pagecount="2" name="Cyberflowers">
+			<tag name="Linienstruktur" />
+			<tag name="Zeichnen" />
+			<tag name="Text" />
+		</section>
+		<section pagecount="2" name="Stock Space">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="3D" />
+			<tag name="Kunst" />
+			<tag name="Meshes" />
+		</section>
+		
+		<section pagecount="1" name="Kapiteltrenner Grundlegende Prinzipien" part="2">
+			<tag name="Farbe" />
+			<tag name="Form" />
+			<tag name="Typografie" />
+			<tag name="Bild" />
+		</section>
+		<section pagecount="7" name="P.0">
+			<tag name="Processing" />
+		</section>
+		<section pagecount="1" name="Kapiteltrenner P.1 Farbe">
+			<tag name="Farbe" />
+			<tag name="Spektrum" />
+			<tag name="Paletten" />
+		</section>
+		<section pagecount="1" name="Hallo Farbe">
+			<tag name="Farbe" />
+		</section>
+		<section pagecount="2" name="P.1.1">
+			<tag name="Farbe" />
+			<tag name="Spektrum" />
+		</section>
+		<section pagecount="1" name="P.1.2.1">
+			<tag name="Farbe" />
+			<tag name="Paletten" />
+			<tag name="Interpolation" />
+		</section>
+		<section pagecount="2" name="P.1.2.2">
+			<tag name="Farbe" />
+			<tag name="Paletten" />
+			<tag name="Bild" />
+		</section>
+		<section pagecount="3" name="P.1.2.3">
+			<tag name="Farbe" />
+			<tag name="Paletten" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="1" name="Kapiteltrenner P.2 Form">
+			<tag name="Form" />
+			<tag name="Raster" />
+			<tag name="Agenten" />
+			<tag name="Zeichnen" />
+		</section>
+		<section pagecount="2" name="Hallo Form">
+			<tag name="Form" />
+		</section>
+		<section pagecount="6" name="P.2.1">
+			<tag name="Form" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="9" name="P.2.2">
+			<tag name="Form" />
+			<tag name="Agenten" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="3" name="P.2.3.1 und 2.3.2">
+			<tag name="Form" />
+			<tag name="Zeichnen" />
+		</section>
+		<section pagecount="1" name="P.2.3.3">
+			<tag name="Form" />
+			<tag name="Zeichnen" />
+			<tag name="Typografie" />
+		</section>
+		<section pagecount="4" name="P.2.3.4 und 2.3.5">
+			<tag name="Form" />
+			<tag name="Zeichnen" />
+		</section>
+		<section pagecount="2" name="P.2.3.6">
+			<tag name="Form" />
+			<tag name="Zeichnen" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="1" name="Kapiteltrenner P.3 Typo">
+			<tag name="Typografie" />
+			<tag name="Text" />
+			<tag name="Schriftkontur" />
+		</section>
+		<section pagecount="1" name="Hallo Typo">
+			<tag name="Typografie" />
+		</section>
+		<section pagecount="3" name="3.1.1 und 3.1.2">
+			<tag name="Typografie" />
+			<tag name="Text" />
+		</section>
+		<section pagecount="5" name="3.1.3 und 3.1.4">
+			<tag name="Typografie" />
+			<tag name="Text" />
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+		</section>
+		<section pagecount="4" name="3.2.1 und 3.2.2">
+			<tag name="Typografie" />
+			<tag name="Schriftkontur" />
+		</section>
+		<section pagecount="1" name="3.2.3">
+			<tag name="Typografie" />
+			<tag name="Schriftkontur" />
+			<tag name="Agenten" />
+		</section>
+		<section pagecount="1" name="Kapiteltrenner P.4 Bild">
+			<tag name="Bild" />
+			<tag name="Bildausschnitte" />
+			<tag name="Bildersammlung" />
+			<tag name="Pixelwerte" />
+		</section>
+		<section pagecount="1" name="Hallo Bild">
+			<tag name="Bild" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="2" name="4.1.1">
+			<tag name="Bild" />
+			<tag name="Bildausschnitte" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="1" name="4.1.2">
+			<tag name="Bild" />
+			<tag name="Bildausschnitte" />
+		</section>
+		<section pagecount="2" name="4.2.1">
+			<tag name="Bild" />
+			<tag name="Bildersammlung" />
+		</section>
+		<section pagecount="1" name="4.2.2">
+			<tag name="Bild" />
+			<tag name="Bildersammlung" />
+			<tag name="Video" />
+		</section>
+		<section pagecount="3" name="4.3.1">
+			<tag name="Bild" />
+			<tag name="Pixelwerte" />
+			<tag name="Raster" />
+		</section>
+		<section pagecount="2" name="4.3.2">
+			<tag name="Bild" />
+			<tag name="Pixelwerte" />
+			<tag name="Image Filter" />
+			<tag name="Typografie" />
+		</section>
+		<section pagecount="3" name="4.3.3">
+			<tag name="Bild" />
+			<tag name="Pixelwerte" />
+			<tag name="Image Filter" />
+			<tag name="Echtzeit-Bilder" />
+		</section>
+		<section pagecount="1" name="Kapiteltrenner Komplexe Methoden" part="3">
+			<tag name="Zufall und Rauschen" />
+			<tag name="Schwingungsfiguren" />
+			<tag name="Meshes" />
+			<tag name="Attraktoren" />
+			<tag name="Baumdiagramme" />
+			<tag name="Datengrafik" />
+		</section>
+		<section pagecount="13" name="M.1">
+			<tag name="Zufall und Rauschen" />
+		</section>
+		<section pagecount="11" name="M.2">
+			<tag name="Schwingungsfiguren" />
+			<tag name="Zeichnen" />
+		</section>
+		<section pagecount="11" name="M.3">
+			<tag name="Meshes" />
+			<tag name="3D" />
+		</section>
+		<section pagecount="10" name="M.4">
+			<tag name="Attraktoren" />
+			<tag name="Linienstruktur" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="11" name="M.5">
+			<tag name="Baumdiagramme" />
+			<tag name="Datengrafik" />
+			<tag name="Rekursion" />
+			<tag name="Algorithmus" />
+		</section>
+		<section pagecount="13" name="M.6">
+			<tag name="Datengrafik" />
+			<tag name="Visualisierung" />
+			<tag name="Netzstruktur" />
+			<tag name="Interpolation" />
+		</section>
+	</sections>
+</book>

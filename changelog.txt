@@ -1,0 +1,12 @@
+GENERATIVEDESIGN CODE PACKAGE FOR PROCESSING 3.X 
+
+----------------------------------------------------------------
+Version 1.0.1 - 19 Aug 2015
+
+Initial release of the code package.
+
+
+
+Attention: As long as there is no final Processing 2.0 release
+it will be quite possible that some sketches might not work
+properly with any new beta release!
