@@ -1,0 +1,6 @@
+GENERATIVEDESIGN CODE PACKAGE FOR PROCESSING 3.X 
+
+----------------------------------------------------------------
+With Processing 3.0b4 SVG some shapes seem to be displayed differently
+than with Processing 2.2.1.
+—> Filed an issue, will be fixed in 3.0b5
