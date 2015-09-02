@@ -5,6 +5,8 @@ Hi. This GitHub repository completes the book [Generative Design](http://www.gen
 
 http://www.generative-gestaltung.de
 
+**This code package still needs to be updated to Processing 3.x. We do our best to finish it as soon as possible.**
+
 **Authors**
 - Hartmut Bohnacker
 - [Benedikt Groß](http://benedikt-gross.de)
