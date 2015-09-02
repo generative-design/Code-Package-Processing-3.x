@@ -42,7 +42,7 @@ void setup() {
 
   // ------ load images ------
   // replace this location with a folder on your machine or use selectInput()
-  File dir = new File(sketchPath,"../P_4_2_1_footage");
+  File dir = new File(sketchPath(""),"../P_4_2_1_footage");
 
   if (dir.isDirectory()) {
     String[] contents = dir.list();
@@ -153,20 +153,3 @@ String timestamp() {
   Calendar now = Calendar.getInstance();
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", now);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

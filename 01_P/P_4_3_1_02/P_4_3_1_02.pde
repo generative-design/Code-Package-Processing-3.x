@@ -45,7 +45,7 @@ void setup() {
   // ------ load shapes ------
   // replace this location with a folder on your machine or use selectFolder()
   //File dir = new File(selectFolder("choose a folder with svg files ..."));
-  File dir = new File(sketchPath,"data");
+  File dir = new File(sketchPath(""),"data");
   if (dir.isDirectory()) {
     String[] contents = dir.list();
     shapes = new PShape[contents.length]; 
@@ -105,25 +105,3 @@ String timestamp() {
   Calendar now = Calendar.getInstance();
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", now);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
