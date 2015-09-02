@@ -24,8 +24,8 @@ void setupGUI(){
   controlP5.setColorActive(activeColor);
   controlP5.setColorBackground(color(170));
   controlP5.setColorForeground(color(50));
-  controlP5.setColorLabel(color(50));
-  controlP5.setColorValue(color(255));
+  controlP5.setColorCaptionLabel(color(50));
+  controlP5.setColorValueLabel(color(255));
 
   ControlGroup ctrl = controlP5.addGroup("menu",15,25,35);
   ctrl.setColorLabel(color(255));
@@ -80,30 +80,30 @@ void setupGUI(){
   for (int i = 0; i < si; i++) {
     sliders[i].setGroup(ctrl);
     sliders[i].setId(i);
-    sliders[i].captionLabel().toUpperCase(true);
-    sliders[i].captionLabel().style().padding(4,3,3,3);
-    sliders[i].captionLabel().style().marginTop = -4;
-    sliders[i].captionLabel().style().marginLeft = 0;
-    sliders[i].captionLabel().style().marginRight = -14;
-    sliders[i].captionLabel().setColorBackground(0x99ffffff);
+    sliders[i].getCaptionLabel().toUpperCase(true);
+    sliders[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    sliders[i].getCaptionLabel().getStyle().marginTop = -4;
+    sliders[i].getCaptionLabel().getStyle().marginLeft = 0;
+    sliders[i].getCaptionLabel().getStyle().marginRight = -14;
+    sliders[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
 
   for (int i = 0; i < ri; i++) {
     ranges[i].setGroup(ctrl);
     ranges[i].setId(i);
-    ranges[i].captionLabel().toUpperCase(true);
-    ranges[i].captionLabel().style().padding(4,3,3,3);
-    ranges[i].captionLabel().style().marginTop = -4;
-    ranges[i].captionLabel().setColorBackground(0x99ffffff);
+    ranges[i].getCaptionLabel().toUpperCase(true);
+    ranges[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    ranges[i].getCaptionLabel().getStyle().marginTop = -4;
+    ranges[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
   for (int i = 0; i < ti; i++) {
     toggles[i].setGroup(ctrl);
-    toggles[i].setColorLabel(color(50));
-    toggles[i].captionLabel().style().padding(4,3,3,3);
-    toggles[i].captionLabel().style().marginTop = -20;
-    toggles[i].captionLabel().style().marginLeft = 18;
-    toggles[i].captionLabel().style().marginRight = 5;
-    toggles[i].captionLabel().setColorBackground(0x99ffffff);
+    toggles[i].setColorCaptionLabel(color(50));
+    toggles[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    toggles[i].getCaptionLabel().getStyle().marginTop = -20;
+    toggles[i].getCaptionLabel().getStyle().marginLeft = 18;
+    toggles[i].getCaptionLabel().getStyle().marginRight = 5;
+    toggles[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
 }
 
@@ -115,34 +115,34 @@ void drawGUI(){
 
 // called on every change of the gui
 void controlEvent(ControlEvent theControlEvent) {
-  //println("got a control event from controller with id "+theControlEvent.controller().id());
-  if(theControlEvent.controller().name().equals("file hue range")) {
-    float[] f = theControlEvent.controller().arrayValue();
+  //println("got a control event from controller with id "+theControlEvent.getController().getId());
+  if(theControlEvent.getController().getName().equals("file hue range")) {
+    float[] f = theControlEvent.getController().arrayValue();
     hueStart = f[0];
     hueEnd = f[1];
   }
-  if(theControlEvent.controller().name().equals("file saturation range")) {
-    float[] f = theControlEvent.controller().arrayValue();
+  if(theControlEvent.getController().getName().equals("file saturation range")) {
+    float[] f = theControlEvent.getController().arrayValue();
     saturationStart = f[0];
     saturationEnd = f[1];
   }
-  if(theControlEvent.controller().name().equals("file brightness range")) {
-    float[] f = theControlEvent.controller().arrayValue();
+  if(theControlEvent.getController().getName().equals("file brightness range")) {
+    float[] f = theControlEvent.getController().arrayValue();
     brightnessStart = f[0];
     brightnessEnd = f[1];
   }
-  if(theControlEvent.controller().name().equals("folder brightness range")) {
-    float[] f = theControlEvent.controller().arrayValue();
+  if(theControlEvent.getController().getName().equals("folder brightness range")) {
+    float[] f = theControlEvent.getController().arrayValue();
     folderBrightnessStart = f[0];
     folderBrightnessEnd = f[1];
   }
-  if(theControlEvent.controller().name().equals("folder stroke brightness range")) {
-    float[] f = theControlEvent.controller().arrayValue();
+  if(theControlEvent.getController().getName().equals("folder stroke brightness range")) {
+    float[] f = theControlEvent.getController().arrayValue();
     folderStrokeBrightnessStart = f[0];
     folderStrokeBrightnessEnd = f[1];
   }
-  if(theControlEvent.controller().name().equals("stroke weight range")) {
-    float[] f = theControlEvent.controller().arrayValue();
+  if(theControlEvent.getController().getName().equals("stroke weight range")) {
+    float[] f = theControlEvent.getController().arrayValue();
     strokeWeightStart = f[0];
     strokeWeightEnd = f[1];
   }

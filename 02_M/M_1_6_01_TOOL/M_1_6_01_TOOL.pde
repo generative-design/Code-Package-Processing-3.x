@@ -135,7 +135,7 @@ void keyReleased() {
   if (key=='s' || key=='S') saveFrame(timestamp()+".png");
   if (key=='f' || key=='F') freeze = !freeze;
   if (key=='m' || key=='M') {
-    showGUI = controlP5.group("menu").isOpen();
+    showGUI = controlP5.getGroup("menu").isOpen();
     showGUI = !showGUI;
   }
   if (key=='p' || key=='P') tiler.init(timestamp()+".png", qualityFactor);
@@ -145,8 +145,8 @@ void keyReleased() {
     noiseSeed(newNoiseSeed);
   }
 
-  if (showGUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (showGUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 }
 
 void mousePressed() {

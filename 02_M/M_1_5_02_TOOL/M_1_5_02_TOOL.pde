@@ -76,11 +76,11 @@ void draw(){
 
 void keyReleased(){
   if(key=='m' || key=='M') {
-    showGUI = controlP5.group("menu").isOpen();
+    showGUI = controlP5.getGroup("menu").isOpen();
     showGUI = !showGUI;
   }
-  if (showGUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (showGUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 
   if (key == '1') drawMode = 1;
   if (key == '2') drawMode = 2;
@@ -97,11 +97,3 @@ void keyReleased(){
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-
-
-
-
-
-
-

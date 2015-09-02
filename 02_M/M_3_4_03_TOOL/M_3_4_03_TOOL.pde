@@ -268,7 +268,7 @@ void draw() {
 
   // Image output
   if (saveOneFrame) {
-    if (controlP5.group("menu").isOpen()) {
+    if (controlP5.getGroup("menu").isOpen()) {
       saveFrame(timestamp()+"_menu.png");
     }
     saveOneFrame = false;
@@ -282,21 +282,21 @@ void draw() {
 
 void keyPressed() {
   if (key=='m' || key=='M') {
-    GUI = controlP5.group("menu").isOpen();
+    GUI = controlP5.getGroup("menu").isOpen();
     GUI = !GUI;
   }
 
-  if (GUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (GUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 
   if (key=='s' || key=='S') {
     saveOneFrame = true;
   }
   if (key=='p' || key=='P') {
-    if (controlP5.group("menu").isOpen()) {
+    if (controlP5.getGroup("menu").isOpen()) {
       saveFrame(timestamp()+"_menu.png");
     }
-    if (controlP5.group("menu").isOpen()) controlP5.group("menu").close();
+    if (controlP5.getGroup("menu").isOpen()) controlP5.getGroup("menu").close();
     tiler.init(timestamp()+".png", qualityFactor);
   }
   if (key=='d' || key=='D') {

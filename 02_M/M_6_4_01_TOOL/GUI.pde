@@ -24,8 +24,8 @@ void setupGUI(){
   controlP5.setColorActive(activeColor);
   controlP5.setColorBackground(color(170));
   controlP5.setColorForeground(color(50));
-  controlP5.setColorLabel(color(50));
-  controlP5.setColorValue(color(255));
+  controlP5.setColorCaptionLabel(color(50));
+  controlP5.setColorValueLabel(color(255));
 
   ControlGroup ctrl = controlP5.addGroup("menu",15,25,35);
   ctrl.activateEvent(true);
@@ -92,37 +92,37 @@ void setupGUI(){
 
   for (int i = 0; i < si; i++) {
     sliders[i].setGroup(ctrl);
-    sliders[i].captionLabel().toUpperCase(true);
-    sliders[i].captionLabel().style().padding(4,3,3,3);
-    sliders[i].captionLabel().style().marginTop = -4;
-    sliders[i].captionLabel().style().marginLeft = 0;
-    sliders[i].captionLabel().style().marginRight = -14;
-    sliders[i].captionLabel().setColorBackground(0x99ffffff);
+    sliders[i].getCaptionLabel().toUpperCase(true);
+    sliders[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    sliders[i].getCaptionLabel().getStyle().marginTop = -4;
+    sliders[i].getCaptionLabel().getStyle().marginLeft = 0;
+    sliders[i].getCaptionLabel().getStyle().marginRight = -14;
+    sliders[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
   for (int i = 0; i < ri; i++) {
     ranges[i].setGroup(ctrl);
-    ranges[i].captionLabel().toUpperCase(true);
-    ranges[i].captionLabel().style().padding(4,3,3,3);
-    ranges[i].captionLabel().style().marginTop = -4;
-    ranges[i].captionLabel().setColorBackground(0x99ffffff);
+    ranges[i].getCaptionLabel().toUpperCase(true);
+    ranges[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    ranges[i].getCaptionLabel().getStyle().marginTop = -4;
+    ranges[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
   for (int i = 0; i < ti; i++) {
     toggles[i].setGroup(ctrl);
-    toggles[i].setColorLabel(color(50));
-    toggles[i].captionLabel().style().padding(4,3,3,3);
-    toggles[i].captionLabel().style().marginTop = -20;
-    toggles[i].captionLabel().style().marginLeft = 18;
-    toggles[i].captionLabel().style().marginRight = 5;
-    toggles[i].captionLabel().setColorBackground(0x99ffffff);
+    toggles[i].setColorCaptionLabel(color(50));
+    toggles[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    toggles[i].getCaptionLabel().getStyle().marginTop = -20;
+    toggles[i].getCaptionLabel().getStyle().marginLeft = 18;
+    toggles[i].getCaptionLabel().getStyle().marginRight = 5;
+    toggles[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
   for (int i = 0; i < bi; i++) {
     bangs[i].setGroup(ctrl);
-    bangs[i].setColorLabel(color(50));
-    bangs[i].captionLabel().style().padding(4,3,3,3);
-    bangs[i].captionLabel().style().marginTop = -20;
-    bangs[i].captionLabel().style().marginLeft = 33;
-    bangs[i].captionLabel().style().marginRight = 5;
-    bangs[i].captionLabel().setColorBackground(0x99ffffff);
+    bangs[i].setColorCaptionLabel(color(50));
+    bangs[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    bangs[i].getCaptionLabel().getStyle().marginTop = -20;
+    bangs[i].getCaptionLabel().getStyle().marginLeft = 33;
+    bangs[i].getCaptionLabel().getStyle().marginRight = 5;
+    bangs[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
 
 }
@@ -139,11 +139,11 @@ void drawGUI(){
 void controlEvent(ControlEvent theControlEvent) {
   guiEvent = true;
 
-  GUI = controlP5.group("menu").isOpen();
+  GUI = controlP5.getGroup("menu").isOpen();
 
   if(theControlEvent.isController()) {
-    if (theControlEvent.controller().name().equals("editText")) {
-      myWikipediaGraph.confirmEdit(theControlEvent.controller().stringValue());
+    if (theControlEvent.getController().getName().equals("editText")) {
+      myWikipediaGraph.confirmEdit(theControlEvent.getController().stringValue());
     }
   }
 }
@@ -164,45 +164,45 @@ void updateColors(boolean stat) {
   for (int i = 0; i < sliders.length; i++) {
     if (sliders[i] == null) break;
     if (stat == false) {
-      sliders[i].setColorLabel(color(50));
-      sliders[i].captionLabel().setColorBackground(0x99ffffff);
+      sliders[i].setColorCaptionLabel(color(50));
+      sliders[i].getCaptionLabel().setColorBackground(0x99ffffff);
     } 
     else {
-      sliders[i].setColorLabel(color(200));
-      sliders[i].captionLabel().setColorBackground(0x99000000);
+      sliders[i].setColorCaptionLabel(color(200));
+      sliders[i].getCaptionLabel().setColorBackground(0x99000000);
     }
   }
   for (int i = 0; i < ranges.length; i++) {
     if (ranges[i] == null) break;
     if (stat == false) {
-      ranges[i].setColorLabel(color(50));
-      ranges[i].captionLabel().setColorBackground(0x99ffffff);
+      ranges[i].setColorCaptionLabel(color(50));
+      ranges[i].getCaptionLabel().setColorBackground(0x99ffffff);
     } 
     else {
-      ranges[i].setColorLabel(color(200));
-      ranges[i].captionLabel().setColorBackground(0x99000000);
+      ranges[i].setColorCaptionLabel(color(200));
+      ranges[i].getCaptionLabel().setColorBackground(0x99000000);
     }
   }
   for (int i = 0; i < toggles.length; i++) {
     if (toggles[i] == null) break;
     if (stat == false) {
-      toggles[i].setColorLabel(color(50));
-      toggles[i].captionLabel().setColorBackground(0x99ffffff);
+      toggles[i].setColorCaptionLabel(color(50));
+      toggles[i].getCaptionLabel().setColorBackground(0x99ffffff);
     } 
     else {
-      toggles[i].setColorLabel(color(200));
-      toggles[i].captionLabel().setColorBackground(0x99000000);
+      toggles[i].setColorCaptionLabel(color(200));
+      toggles[i].getCaptionLabel().setColorBackground(0x99000000);
     }
   }
   for (int i = 0; i < bangs.length; i++) {
     if (bangs[i] == null) break;
     if (stat == false) {
-      bangs[i].setColorLabel(color(50));
-      bangs[i].captionLabel().setColorBackground(0x99ffffff);
+      bangs[i].setColorCaptionLabel(color(50));
+      bangs[i].getCaptionLabel().setColorBackground(0x99ffffff);
     } 
     else {
-      bangs[i].setColorLabel(color(200));
-      bangs[i].captionLabel().setColorBackground(0x99000000);
+      bangs[i].setColorCaptionLabel(color(200));
+      bangs[i].getCaptionLabel().setColorBackground(0x99000000);
     }
   }
 }

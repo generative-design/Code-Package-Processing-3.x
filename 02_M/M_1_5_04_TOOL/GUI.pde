@@ -24,8 +24,8 @@ void setupGUI(){
   controlP5.setColorActive(activeColor);
   controlP5.setColorBackground(color(170));
   controlP5.setColorForeground(color(50));
-  controlP5.setColorLabel(color(50));
-  controlP5.setColorValue(color(255));
+  controlP5.setColorCaptionLabel(color(50));
+  controlP5.setColorValueLabel(color(255));
 
   ControlGroup ctrl = controlP5.addGroup("menu",15,25,35);
   ctrl.setColorLabel(color(255));
@@ -63,21 +63,21 @@ void setupGUI(){
   for (int i = 0; i < si; i++) {
     sliders[i].setGroup(ctrl);
     sliders[i].setId(i);
-    sliders[i].captionLabel().toUpperCase(true);
-    sliders[i].captionLabel().style().padding(4,3,3,3);
-    sliders[i].captionLabel().style().marginTop = -4;
-    sliders[i].captionLabel().style().marginLeft = 0;
-    sliders[i].captionLabel().style().marginRight = -14;
-    sliders[i].captionLabel().setColorBackground(0x99ffffff);
+    sliders[i].getCaptionLabel().toUpperCase(true);
+    sliders[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    sliders[i].getCaptionLabel().getStyle().marginTop = -4;
+    sliders[i].getCaptionLabel().getStyle().marginLeft = 0;
+    sliders[i].getCaptionLabel().getStyle().marginRight = -14;
+    sliders[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
 
   for (int i = 0; i < ri; i++) {
     ranges[i].setGroup(ctrl);
     ranges[i].setId(i);
-    ranges[i].captionLabel().toUpperCase(true);
-    ranges[i].captionLabel().style().padding(4,3,3,3);
-    ranges[i].captionLabel().style().marginTop = -4;
-    ranges[i].captionLabel().setColorBackground(0x99ffffff);
+    ranges[i].getCaptionLabel().toUpperCase(true);
+    ranges[i].getCaptionLabel().getStyle().padding(4,3,3,3);
+    ranges[i].getCaptionLabel().getStyle().marginTop = -4;
+    ranges[i].getCaptionLabel().setColorBackground(0x99ffffff);
   }
 }
 
@@ -88,26 +88,17 @@ void drawGUI(){
 
 // called on every change of the gui
 void controlEvent(ControlEvent theEvent) {
-  //println("got a control event from controller with id "+theEvent.controller().id());
+  //println("got a control event from controller with id "+theEvent.getController().getId());
   // noiseSticking changed -> set new values
 
   if(theEvent.isController()) {
-    if (theEvent.controller().name().equals("noiseStickingRange")) {
+    if (theEvent.getController().getName().equals("noiseStickingRange")) {
       for(int i=0; i<agentsCount; i++) agents[i].setNoiseSticking(noiseStickingRange);  
     }
-    else if(theEvent.controller().name().equals("agentWidthRange")) {
-      float[] f = theEvent.controller().arrayValue();
+    else if(theEvent.getController().getName().equals("agentWidthRange")) {
+      float[] f = theEvent.getController().getArrayValue();
       agentWidthMin = f[0];
       agentWidthMax = f[1];
     }
   }
 }
-
-
-
-
-
-
-
-
-

@@ -335,7 +335,7 @@ void draw() {
   // ------ image output ------
 
   if(saveOneFrame) {
-    if (controlP5.group("menu").isOpen()) {
+    if (controlP5.getGroup("menu").isOpen()) {
       saveFrame(timestamp()+"_menu.png");
     }
     saveOneFrame = false;
@@ -542,66 +542,66 @@ boolean theLockX, boolean theLockY) {
 
   Toggle t;
 
-  controlP5.controller("xCount").setValue(theXCount);
-  controlP5.controller("yCount").setValue(theYCount);
-  controlP5.controller("layerCount").setValue(theLayerCount);
+  controlP5.getController("xCount").setValue(theXCount);
+  controlP5.getController("yCount").setValue(theYCount);
+  controlP5.getController("layerCount").setValue(theLayerCount);
   oldXCount = theXCount;
   oldYCount = theYCount;
   oldLayerCount = layerCount;
 
-  controlP5.controller("gridStepX").setValue(theGridStepX);
-  controlP5.controller("gridStepY").setValue(theGridStepY);
+  controlP5.getController("gridStepX").setValue(theGridStepX);
+  controlP5.getController("gridStepY").setValue(theGridStepY);
 
-  controlP5.controller("attractorRadius").setValue(theAttractorRadius);
-  controlP5.controller("attractorStrength").setValue(theAttractorStrength);
-  controlP5.controller("attractorRamp").setValue(theAttractorRamp);
-  controlP5.controller("nodeDamping").setValue(theNodeDamping);
+  controlP5.getController("attractorRadius").setValue(theAttractorRadius);
+  controlP5.getController("attractorStrength").setValue(theAttractorStrength);
+  controlP5.getController("attractorRamp").setValue(theAttractorRamp);
+  controlP5.getController("nodeDamping").setValue(theNodeDamping);
 
   if (invertBackground != theInvertBackground) {
-    t = (Toggle) controlP5.controller("invertBackground");
+    t = (Toggle) controlP5.getController("invertBackground");
     t.setState(theInvertBackground);
   }
-  controlP5.controller("lineWeight").setValue(theLineWeigth);
-  controlP5.controller("lineAlpha").setValue(theLineAlpha);
+  controlP5.getController("lineWeight").setValue(theLineWeigth);
+  controlP5.getController("lineAlpha").setValue(theLineAlpha);
   if (drawX != theDrawX) {
-    t = (Toggle) controlP5.controller("drawX");
+    t = (Toggle) controlP5.getController("drawX");
     t.setState(theDrawX);
   }
   if (drawY != theDrawY) {
-    t = (Toggle) controlP5.controller("drawY");
+    t = (Toggle) controlP5.getController("drawY");
     t.setState(theDrawY);
   }
 
   if (lockX != theLockX) {
-    t = (Toggle) controlP5.controller("lockX");
+    t = (Toggle) controlP5.getController("lockX");
     t.setState(theLockX);
   }
   if (lockY != theLockY) {
-    t = (Toggle) controlP5.controller("lockY");
+    t = (Toggle) controlP5.getController("lockY");
     t.setState(theLockY);
   }
 
 
   boolean theDrawLines = !theDrawCurves;
   if (drawLines != theDrawLines) {
-    t = (Toggle) controlP5.controller("drawLines");
+    t = (Toggle) controlP5.getController("drawLines");
     t.setState(theDrawLines);
     drawLines = theDrawLines;
   }
   if (drawCurves != theDrawCurves) {
-    t = (Toggle) controlP5.controller("drawCurves");
+    t = (Toggle) controlP5.getController("drawCurves");
     t.setState(theDrawCurves);
     drawCurves = theDrawCurves;
   }
 
   boolean theAttractorSmooth = !theAttractorTwirl;
   if (attractorSmooth != theAttractorSmooth) {
-    t = (Toggle) controlP5.controller("attractorSmooth");
+    t = (Toggle) controlP5.getController("attractorSmooth");
     t.setState(theAttractorSmooth);
     attractorSmooth = theAttractorSmooth;
   }
   if (attractorTwirl != theAttractorTwirl) {
-    t = (Toggle) controlP5.controller("attractorTwirl");
+    t = (Toggle) controlP5.getController("attractorTwirl");
     t.setState(theAttractorTwirl);
     attractorTwirl = theAttractorTwirl;
   }
@@ -641,11 +641,11 @@ void freezeLayer(int iz) {
 
 void keyPressed(){
   if(key=='m' || key=='M') {
-    GUI = controlP5.group("menu").isOpen();
+    GUI = controlP5.getGroup("menu").isOpen();
     GUI = !GUI;
   }
-  if (GUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (GUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 
   if(key=='r' || key=='R') {
     // reset();

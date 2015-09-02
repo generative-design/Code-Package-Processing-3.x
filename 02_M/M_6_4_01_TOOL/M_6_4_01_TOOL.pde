@@ -160,7 +160,7 @@ void draw() {
   myWikipediaGraph.autoZoom = autoZoom;
   if (autoZoom) {
     boolean tmpGuiEvent = guiEvent;
-    controlP5.controller("zoom").setValue(myWikipediaGraph.getZoom());
+    controlP5.getController("zoom").setValue(myWikipediaGraph.getZoom());
     guiEvent = tmpGuiEvent;
   }
   else{
@@ -320,20 +320,20 @@ color linearColor(float theValue) {
 void keyPressed(){
   if (!myWikipediaGraph.editing) {
     if(key=='m' || key=='M') {
-      GUI = controlP5.group("menu").isOpen();
+      GUI = controlP5.getGroup("menu").isOpen();
       GUI = !GUI;
     }
-    if (GUI) controlP5.group("menu").open();
-    else controlP5.group("menu").close();
+    if (GUI) controlP5.getGroup("menu").open();
+    else controlP5.getGroup("menu").close();
 
     if (key=='1') {
       colorizeNodes = !colorizeNodes;
-      Toggle t = (Toggle) controlP5.controller("colorizeNodes");
+      Toggle t = (Toggle) controlP5.getController("colorizeNodes");
       t.setState(colorizeNodes);
     }
     if (key=='2') {
       drawFishEyed = !drawFishEyed;
-      Toggle t = (Toggle) controlP5.controller("drawFishEyed");
+      Toggle t = (Toggle) controlP5.getController("drawFishEyed");
       t.setState(drawFishEyed);
     }
 

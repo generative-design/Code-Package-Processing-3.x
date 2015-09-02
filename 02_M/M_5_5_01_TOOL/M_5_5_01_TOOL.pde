@@ -289,11 +289,11 @@ void keyReleased() {
   }
 
   if (key=='m' || key=='M') {
-    showGUI = controlP5.group("menu").isOpen();
+    showGUI = controlP5.getGroup("menu").isOpen();
     showGUI = !showGUI;
   }
-  if (showGUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (showGUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 }
 
 

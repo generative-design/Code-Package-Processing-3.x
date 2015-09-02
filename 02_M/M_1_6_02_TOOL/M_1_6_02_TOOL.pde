@@ -138,7 +138,7 @@ void keyReleased() {
   if (key == '1') drawMode = 1;
   if (key == '2') drawMode = 2;
   if (key=='m' || key=='M') {
-    showGUI = controlP5.group("menu").isOpen();
+    showGUI = controlP5.getGroup("menu").isOpen();
     showGUI = !showGUI;
   }
   if (key=='p' || key=='P') tiler.init(timestamp()+".png",qualityFactor);
@@ -148,8 +148,8 @@ void keyReleased() {
     noiseSeed(newNoiseSeed);
   }
 
-  if (showGUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (showGUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 }
 
 void mousePressed(){

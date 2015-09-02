@@ -170,7 +170,7 @@ void draw() {
 
   // image output
   if (saveOneFrame) {
-    if (controlP5.group("menu").isOpen()) {
+    if (controlP5.getGroup("menu").isOpen()) {
       saveFrame(timestamp()+"_menu.png");
     }
     saveOneFrame = false;
@@ -231,12 +231,12 @@ void drawLine(PVector p1, PVector p2) {
 void keyPressed() {
 
   if (key=='m' || key=='M') {
-    GUI = controlP5.group("menu").isOpen();
+    GUI = controlP5.getGroup("menu").isOpen();
     GUI = !GUI;
     guiEvent = true;
   }
-  if (GUI) controlP5.group("menu").open();
-  else controlP5.group("menu").close();
+  if (GUI) controlP5.getGroup("menu").open();
+  else controlP5.getGroup("menu").close();
 
   if (key=='s' || key=='S') {
     saveOneFrame = true;

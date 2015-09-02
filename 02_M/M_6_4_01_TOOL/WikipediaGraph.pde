@@ -523,7 +523,7 @@ class WikipediaGraph {
 
 
   void draw() {
-    //  TextField tf = (TextField) controlP5.controller("editText");
+    //  TextField tf = (TextField) controlP5.getController("editText");
     if (!editing && editTextfield != null) {
       controlP5.remove("editText");
     }
@@ -784,7 +784,7 @@ class WikipediaGraph {
             editTextfield = controlP5.addTextfield("editText",mouseX,mouseY,150,20);
             editTextfield.setFocus(true);
             editTextfield.setColorBackground(color(255));
-            editTextfield.setColorValue(color(0));
+            editTextfield.setColorValueLabel(color(0));
             editTextfield.setLabel("");
 
             return true;
