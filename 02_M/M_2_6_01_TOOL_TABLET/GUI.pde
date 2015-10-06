@@ -139,7 +139,7 @@ void controlEvent(ControlEvent theControlEvent) {
 
   if(theControlEvent.isController()) {
     if(theControlEvent.getController().getName().equals("hueRange")) {
-      float[] f = theControlEvent.getController().arrayValue();
+      float[] f = theControlEvent.getController().getArrayValue();
       minHueValue = f[0];
       maxHueValue = f[1];
     }

@@ -121,7 +121,7 @@ TileSaver tiler;
 
 
 void setup() {
-  size(1000, 1000, OPENGL);
+  size(1000, 1000, P3D);
   hint(DISABLE_DEPTH_TEST);
 
   tiler = new TileSaver(this);

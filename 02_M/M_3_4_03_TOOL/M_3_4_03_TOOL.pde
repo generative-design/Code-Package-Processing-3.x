@@ -36,12 +36,9 @@
 // ------ imports ------
 
 import processing.opengl.*;
-import javax.media.opengl.*;
 import processing.dxf.*;
 import java.util.Calendar;
 
-PGraphicsOpenGL pgl;
-GL gl;
 
 // ------ image output ------
 
@@ -113,11 +110,9 @@ Toggle[] toggles;
 
 
 void setup() {
-  size(1000, 1000, OPENGL);
+  size(1000, 1000, P3D);
 
   setupGUI(); 
-
-  pgl = (PGraphicsOpenGL) g;
 
   noStroke();
 
@@ -141,9 +136,6 @@ void draw() {
   else background(255);
 
   if (useBlendWhite || useBlendBlack) {
-    gl = ((PJOGL)beginPGL()).gl.getGL2();
-    if (useBlendWhite) gl.glBlendFunc(GL.GL_ONE_MINUS_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_COLOR); 
-    if (useBlendBlack) gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_DST_COLOR); 
   }
 
 
@@ -187,7 +179,7 @@ void draw() {
 
 
   // Set parameters and draw meshes
-  frame.setTitle("Current form: " + myMeshes[0].getFormName());
+  surface.setTitle("Current form: " + myMeshes[0].getFormName());
 
   colorMode(HSB, 360, 100, 100, 100);
 
@@ -235,7 +227,6 @@ void draw() {
   popMatrix();
 
   if (useBlendWhite || useBlendBlack) {
-    pgl.endPGL();
   }
 
   // Image output
@@ -252,8 +243,6 @@ void draw() {
   // Draw GUI
   if (tiler.checkStatus() == false) {
     if (useBlendBlack || useBlendWhite) {
-      pgl.beginPGL();
-      gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA); 
     }
 
     hint(DISABLE_DEPTH_TEST);
@@ -261,7 +250,6 @@ void draw() {
     drawGUI();
 
     if (useBlendBlack || useBlendWhite) {
-      pgl.endPGL();
     }
   }
 
@@ -325,9 +313,3 @@ void mouseExited(MouseEvent e) {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-
-
-
-
-

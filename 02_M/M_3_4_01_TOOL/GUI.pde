@@ -171,27 +171,27 @@ void controlEvent(ControlEvent theControlEvent) {
 
   if(theControlEvent.isController()) {
     if(theControlEvent.getController().getName().equals("uRange")) {
-      float[] f = theControlEvent.getController().arrayValue();
+      float[] f = theControlEvent.getController().getArrayValue();
       uCenter = (f[0] + f[1]) / 2;
       uRange = f[1] - f[0];
     }
     if(theControlEvent.getController().getName().equals("vRange")) {
-      float[] f = theControlEvent.getController().arrayValue();
+      float[] f = theControlEvent.getController().getArrayValue();
       vCenter = (f[0] + f[1]) / 2;
       vRange = f[1] - f[0];
     }
     if(theControlEvent.getController().getName().equals("hueRange")) {
-      float[] f = theControlEvent.getController().arrayValue();
+      float[] f = theControlEvent.getController().getArrayValue();
       minHue = f[0];
       maxHue = f[1];
     }
     if(theControlEvent.getController().getName().equals("saturationRange")) {
-      float[] f = theControlEvent.getController().arrayValue();
+      float[] f = theControlEvent.getController().getArrayValue();
       minSaturation = f[0];
       maxSaturation = f[1];
     }
     if(theControlEvent.getController().getName().equals("brightnessRange")) {
-      float[] f = theControlEvent.getController().arrayValue();
+      float[] f = theControlEvent.getController().getArrayValue();
       minBrightness = f[0];
       maxBrightness = f[1];
     }

@@ -69,12 +69,5 @@ void draw() {
 
 void mousePressed() {
   query = "http://en.wikipedia.org/w/api.php?titles=Superegg&format=xml&action=query&prop=links&pllimit=500";
-  myXML = GenerativeDesign.loadXMLAsync2(this, query);
+  myXML = GenerativeDesign.loadXMLAsync(this, query);
 }
-
-
-
-
-
-
-

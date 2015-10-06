@@ -72,9 +72,6 @@ float saturationValue = 0;
 float brightnessValue = 0;
 boolean invertHue = false;
 
-// listen to window events
-FrameListener myFrameListener = new FrameListener();
-
 
 // ------ mouse interaction ------
 
@@ -106,7 +103,10 @@ void setup() {
   size(800, 800);
 
   // make window resizable
-  frame.setResizable(true);
+  // Attention: with Processing 3.0 windows resizing behaves differently than before.
+  // You might uncomment the folling line, but the screen will not be updated
+  // automativally, when resizing the window.
+  //surface.setResizable(true);
 
   smooth();
 
@@ -491,35 +491,7 @@ void mouseReleased() {
 }
 
 
-void windowResized() {
-  // Intercept resize event, set flag to
-  // recalculate positions and call redraw()
-  i1 = 0;
-} 
-
 
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-
-
-// we need to redraw, if the window had been resized 
-class FrameListener implements ComponentListener {
-  FrameListener() {
-    addComponentListener( this );
-  } 
-
-  public void componentResized( ComponentEvent e ) {
-    i1 = 0;
-  }
-  public void componentHidden( ComponentEvent e ) {
-  }
-  public void componentMoved( ComponentEvent e ) {
-  }
-  public void componentShown( ComponentEvent e ) {
-  }
-} 
-
-
-

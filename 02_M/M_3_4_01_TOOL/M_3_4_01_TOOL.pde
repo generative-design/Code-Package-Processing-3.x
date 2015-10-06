@@ -36,12 +36,8 @@
 // ------ imports ------
 
 import processing.opengl.*;
-import javax.media.opengl.*;
 import processing.dxf.*;
 import java.util.Calendar;
-
-PGraphicsOpenGL pgl;
-GL gl;
 
 
 // ------ initial parameters and declarations ------
@@ -109,11 +105,9 @@ boolean saveDXF = false;
 
 
 void setup() {
-  size(1000, 1000, OPENGL);
+  size(1000, 1000, P3D);
 
   setupGUI();
-
-  pgl = (PGraphicsOpenGL) g;
 
   noStroke();
 
@@ -140,9 +134,6 @@ void draw() {
   else background(255);
 
   if (useBlendWhite || useBlendBlack) {
-    gl = ((PJOGL)beginPGL()).gl.getGL2();
-    if (useBlendWhite) gl.glBlendFunc(GL.GL_ONE_MINUS_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_COLOR); 
-    if (useBlendBlack) gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_DST_COLOR); 
   }
 
 
@@ -175,7 +166,7 @@ void draw() {
 
   // ------ set parameters and draw mesh ------
   myMesh.setForm(form);
-  frame.setTitle("Current form: " + myMesh.getFormName());
+  surface.setTitle("Current form: " + myMesh.getFormName());
 
   if (drawTriangles && drawNoStrip) myMesh.setDrawMode(TRIANGLES);
   else if (drawTriangles && drawStrip) myMesh.setDrawMode(TRIANGLE_STRIP);
@@ -224,8 +215,6 @@ void draw() {
   // draw gui
   if (tiler.checkStatus() == false) {
     if (useBlendBlack || useBlendWhite) {
-      pgl.beginPGL();
-      gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
     }
 
     hint(DISABLE_DEPTH_TEST);
@@ -233,7 +222,6 @@ void draw() {
     drawGUI();
 
     if (useBlendWhite || useBlendBlack) {
-      pgl.endPGL();
     }
   }
 
@@ -297,6 +285,3 @@ void mouseExited(MouseEvent e) {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-
-

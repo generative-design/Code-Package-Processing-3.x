@@ -143,7 +143,7 @@ void controlEvent(ControlEvent theControlEvent) {
 
   if(theControlEvent.isController()) {
     if (theControlEvent.getController().getName().equals("editText")) {
-      myWikipediaGraph.confirmEdit(theControlEvent.getController().stringValue());
+      myWikipediaGraph.confirmEdit(theControlEvent.getController().getStringValue());
     }
   }
 }
@@ -206,19 +206,3 @@ void updateColors(boolean stat) {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -182,7 +182,7 @@ void keyReleased() {
 
   if (key == '1') {
     mappingMode = 1;
-    frame.setTitle("last modified: old / young files, global");
+    surface.setTitle("last modified: old / young files, global");
   }  
   if (key == '2') {
     mappingMode = 2;
@@ -204,11 +204,3 @@ void keyReleased() {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 } 
-
-
-
-
-
-
-
-

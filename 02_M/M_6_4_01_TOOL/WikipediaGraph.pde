@@ -698,7 +698,7 @@ class WikipediaGraph {
 
         // double click right -> open page in browser
         if (mouseEvent.getClickCount()==2) {
-          link("http://en.wikipedia.org/wiki/"+encodeURL(clickedNode.id), "_new"); 
+          link("http://en.wikipedia.org/wiki/"+encodeURL(clickedNode.id)); 
         }
         return true;
       }
@@ -810,9 +810,3 @@ class WikipediaGraph {
   }
 
 }
-
-
-
-
-
-

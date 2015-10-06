@@ -68,7 +68,7 @@ boolean showStroke = true;
 
 
 void setup() {
-  size(800, 800, OPENGL);
+  size(800, 800, P3D);
   colorMode(HSB, 360, 100, 100);
   tiler = new TileSaver(this);
   cursor(CROSS);

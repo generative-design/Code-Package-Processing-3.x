@@ -45,7 +45,7 @@ boolean saveOneFrame = false;
 
 
 void setup() {
-  size(800, 800, OPENGL);
+  size(800, 800, P3D);
   smooth(8);
   
   // ------ initialize meshes ------
@@ -73,7 +73,7 @@ void draw() {
   // ------ setup canvas, lights and view ------
   // setup drawing style 
   background(255);
-  strokeWeight(2);
+  strokeWeight(1/130.0);
 
   setView();
 
@@ -114,6 +114,3 @@ void setView() {
   rotateX(-rotationY); 
   rotateY(rotationX); 
 }
-
-
-

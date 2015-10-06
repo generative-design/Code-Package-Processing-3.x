@@ -40,7 +40,7 @@ int alphaValue = 27;
 int actRandomSeed = 0;
 
 void setup() {
-  size(800,800,OPENGL); 
+  size(800,800,P3D); 
   colorMode(HSB,360,100,100,100);
   noStroke();
 }

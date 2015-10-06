@@ -24,7 +24,7 @@
  * left click          : starts loading links for the clicked node
  * shift + left click  : remove node
  * right click + drag  : drag node
- * double richt click  : open article in browser
+ * double right click  : open article in browser
  *
  * KEYS
  * arrow up/down       : zoom
@@ -81,7 +81,7 @@ void setup(){
   noStroke();
 
   // make window resizable
-  frame.setResizable(true);
+  surface.setResizable(true);
 
   // construct a new WikipediaGraph
   myWikipediaGraph = new WikipediaGraph();
@@ -253,33 +253,3 @@ void mouseExited(MouseEvent e) {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

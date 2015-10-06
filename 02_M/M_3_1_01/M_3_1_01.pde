@@ -37,10 +37,11 @@ float rotationX = 0, rotationY = 0, targetRotationX = 0, targetRotationY = 0, cl
 
 
 void setup() {
-  size(400, 400, OPENGL);
+  size(400, 400, P3D);
   smooth(8);
-
+  
   fill(255);  
+  strokeWeight(1/80.0);
 }
 
 
@@ -93,5 +94,3 @@ void setView() {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-

@@ -58,7 +58,7 @@ TileSaver tiler;
 
 
 void setup() {
-  size(600, 600, OPENGL);
+  size(600, 600, P3D);
 
   tiler = new TileSaver(this);
 

@@ -26,7 +26,7 @@ import java.util.Calendar;
 
 
 void setup() {
-  size(1000,1000,OPENGL);
+  size(1000,1000,P3D);
 
   // setup drawing style 
   background(255);
@@ -60,4 +60,3 @@ void setup() {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-

@@ -117,32 +117,32 @@ void drawGUI(){
 void controlEvent(ControlEvent theControlEvent) {
   //println("got a control event from controller with id "+theControlEvent.getController().getId());
   if(theControlEvent.getController().getName().equals("file hue range")) {
-    float[] f = theControlEvent.getController().arrayValue();
+    float[] f = theControlEvent.getController().getArrayValue();
     hueStart = f[0];
     hueEnd = f[1];
   }
   if(theControlEvent.getController().getName().equals("file saturation range")) {
-    float[] f = theControlEvent.getController().arrayValue();
+    float[] f = theControlEvent.getController().getArrayValue();
     saturationStart = f[0];
     saturationEnd = f[1];
   }
   if(theControlEvent.getController().getName().equals("file brightness range")) {
-    float[] f = theControlEvent.getController().arrayValue();
+    float[] f = theControlEvent.getController().getArrayValue();
     brightnessStart = f[0];
     brightnessEnd = f[1];
   }
   if(theControlEvent.getController().getName().equals("folder brightness range")) {
-    float[] f = theControlEvent.getController().arrayValue();
+    float[] f = theControlEvent.getController().getArrayValue();
     folderBrightnessStart = f[0];
     folderBrightnessEnd = f[1];
   }
   if(theControlEvent.getController().getName().equals("folder stroke brightness range")) {
-    float[] f = theControlEvent.getController().arrayValue();
+    float[] f = theControlEvent.getController().getArrayValue();
     folderStrokeBrightnessStart = f[0];
     folderStrokeBrightnessEnd = f[1];
   }
   if(theControlEvent.getController().getName().equals("stroke weight range")) {
-    float[] f = theControlEvent.getController().arrayValue();
+    float[] f = theControlEvent.getController().getArrayValue();
     strokeWeightStart = f[0];
     strokeWeightEnd = f[1];
   }

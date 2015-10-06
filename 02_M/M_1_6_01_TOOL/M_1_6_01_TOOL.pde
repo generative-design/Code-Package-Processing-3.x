@@ -69,7 +69,7 @@ int qualityFactor = 3;
 TileSaver tiler;
 
 void setup() {
-  size(800, 800, OPENGL);
+  size(800, 800, P3D);
   setupGUI(); 
   colorMode(HSB, 360, 100, 100);
   for (int i=0; i<agents.length; i++) agents[i]=new Agent();

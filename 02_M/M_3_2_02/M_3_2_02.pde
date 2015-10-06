@@ -44,7 +44,7 @@ boolean savePDF = false;
 
 
 void setup() {
-  size(800, 800, OPENGL);
+  size(800, 800, P3D);
   smooth(8);
 }
 
@@ -54,7 +54,7 @@ void draw() {
 
   background(255);
   fill(255);
-  strokeWeight(2);  
+  strokeWeight(1/20.0);  
 
   setView();
 
@@ -116,6 +116,3 @@ void setView() {
 String timestamp() {
   return String.format("%1$ty%1$tm%1$td_%1$tH%1$tM%1$tS", Calendar.getInstance());
 }
-
-
-

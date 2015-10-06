@@ -37,7 +37,7 @@ MyOwnMesh myMesh;
 
 
 void setup() {
-  size(1000,1000,OPENGL);
+  size(1000,1000,P3D);
 
   // setup drawing style 
   colorMode(HSB, 360, 100, 100, 100);
