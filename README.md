@@ -1,4 +1,4 @@
-This code package still needs to be updated to Processing 3.x and is work in progress! We do our best to finish it as soon as possible.
+This code package still needs to be updated to Processing 3.x and is work in progress! Most of it should work by now.
 ===============================================
 
 Generative Design Code Package (for Processing-3.x)
