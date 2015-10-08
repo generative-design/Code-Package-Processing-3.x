@@ -57,7 +57,11 @@ class TileSaver {
     tileFilename=_filename;
     tileNum=_num;
     tileNumSq=(tileNum*tileNum);
-
+    
+    // Reset tile counters to start over correctly
+    tileX = 0;
+    tileY = 0;
+    
     width=p.width;
     height=p.height;
     cameraZ=(height/2.0f)/p.tan(p.PI*FOV/360.0f);
@@ -234,6 +238,3 @@ class TileSaver {
     return name;
   }
 }
-
-
-
