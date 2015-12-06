@@ -1,6 +1,14 @@
 GENERATIVEDESIGN CODE PACKAGE FOR PROCESSING 3.X 
 
 ----------------------------------------------------------------
+Version 1.0.2 - 6 Dec 2015
+
+P_2_3_6_01, P_2_3_6_02: Corrected the viewBox and 
+enable-background attributes for some of the SVGs.
+Contributed by Eric Cline. Thanks!
+
+
+----------------------------------------------------------------
 Version 1.0.1 - 8 Oct 2015
 
 Initial release of the code package.
