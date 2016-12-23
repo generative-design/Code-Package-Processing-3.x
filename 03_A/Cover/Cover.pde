@@ -1,6 +1,6 @@
 // Cover.pde
 // ImageRibbon.pde, Tag.pde
-// 
+//
 // Generative Gestaltung, ISBN: 978-3-87439-759-9
 // First Edition, Hermann Schmidt, Mainz, 2009
 // Hartmut Bohnacker, Benedikt Groß, Julia Laub, Claudius Lazzeroni
@@ -132,7 +132,11 @@ float tagBlockGapRatio = 0.25;
 
 
 void setup() {
-  size(1310*qf, 822*qf); 
+  // Default values are:
+  // width: 1310;
+  // height: 822;
+  // Multiply this values by qf to get the correct resolution.
+  size(1310, 822);
   frameRate(4);
 
   smooth();
@@ -310,16 +314,16 @@ void setup() {
   // ------ load files ------
   imageCount = 0;
 
-  File dir = new File(sketchPath, "data/images");
+  File dir = new File(sketchPath(), "data/images");
 
   if (dir.isDirectory()) {
     String[] contents = dir.list();
-    images = new PImage[contents.length]; 
+    images = new PImage[contents.length];
     //for (int i = 15 ; i < 60; i++) {
     for (int i = 0 ; i < contents.length; i++) {
       if (contents[i].charAt(0) == '.') continue;
       else if (contents[i].toLowerCase().endsWith(".png") || contents[i].toLowerCase().endsWith(".jpg")) {
-        File childFile = new File(dir, contents[i]);        
+        File childFile = new File(dir, contents[i]);
         images[imageCount] = loadImage(childFile.getPath());
         println(imageCount+" - "+contents[i]);
         imageCount++;
