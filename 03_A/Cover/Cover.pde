@@ -129,14 +129,12 @@ float tagBlockFactor = 1;
 float tagBlockGapRatio = 0.25;
 
 
+void settings() {
+    size(1310 * qf, 822 * qf);
+}
 
 
 void setup() {
-  // Default values are:
-  // width: 1310;
-  // height: 822;
-  // Multiply this values by qf to get the correct resolution.
-  size(1310, 822);
   frameRate(4);
 
   smooth();

@@ -99,8 +99,12 @@ int[] bookParts = new int[0];
 PFont font;
 
 
+void settings() {
+  size((2*205)*qf, 285*qf);
+}
+
+
 void setup() {
-  size((2*205)*qf, 285*qf); 
   background(255);
   smooth();
   noStroke();
