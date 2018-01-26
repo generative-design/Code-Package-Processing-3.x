@@ -168,7 +168,7 @@ void keyReleased() {
   }
 
   if (key == 'z' || key == 'Z') {
-    undoDrawItems(undoIndex);
+    undoIndex = undoDrawItems(undoIndex);
     reDrawAllDrawItems();
   }
 }
@@ -198,56 +198,13 @@ void reDrawAllDrawItems() {
   } 
 }
 
-void undoDrawItems(int theUndoIndex) {
+int undoDrawItems(int theUndoIndex) {
   theUndoIndex -= 1; 
   if (drawItems.size() > 0 && theUndoIndex >= 0) {
     for (int i = drawItems.size()-1; i > theUndoIndex; i--) {
       drawItems.remove(i);
     }
   }
+  
+  return theUndoIndex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
