@@ -35,8 +35,9 @@ void setup() {
   size(256, 256);
   smooth();
   // ------ load shapes ------
+  
   // replace this location with a folder on your machine
-  dir = new File("your/path/to/folder");
+  dir = new File(sketchPath(""), "data");
   //File dir = new File(sketchPath,"data");
   if (dir.isDirectory()) {
     String[] contents = dir.list();
@@ -91,14 +92,3 @@ void draw() {
   counter++;
   if (counter >= shapeCount) noLoop();
 }
-
-
-
-
-
-
-
-
-
-
-

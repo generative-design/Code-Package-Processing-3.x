@@ -45,23 +45,29 @@ void setup() {
   // ------ load shapes ------
   // replace this location with a folder on your machine or use selectFolder()
   //File dir = new File(selectFolder("choose a folder with svg files ..."));
-  File dir = new File(sketchPath(""),"data");
+  File dir = new File(sketchPath(""), "data");
+  
   if (dir.isDirectory()) {
     String[] contents = dir.list();
-    shapes = new PShape[contents.length]; 
+    String[] svgFiles = new String[0];
     for (int i = 0 ; i < contents.length; i++) {
       // skip hidden files and folders starting with a dot, load .svg files only
       if (contents[i].charAt(0) == '.') continue;
       else if (contents[i].toLowerCase().endsWith(".svg")) {
         File childFile = new File(dir, contents[i]);
-        println(childFile.getPath());        
-        shapes[shapeCount] = loadShape(childFile.getPath());
-        shapeCount++;             
+        println(i, childFile.getPath());
+        svgFiles = append(svgFiles, childFile.getPath());
       }
     }
+    
+    svgFiles = sort(svgFiles);
+    
+    shapeCount = svgFiles.length;
+    shapes = new PShape[shapeCount]; 
+    for (int i = 0 ; i < shapeCount; i++) {
+      shapes[i] = loadShape(svgFiles[i]);
+    }
   }
-  
-  println(shapeCount);
 }
 
 void draw() {
