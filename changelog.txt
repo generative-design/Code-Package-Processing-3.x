@@ -1,6 +1,14 @@
 GENERATIVEDESIGN CODE PACKAGE FOR PROCESSING 3.X 
 
 ----------------------------------------------------------------
+Version 1.0.3 - 13 Apr 2021
+
+P_4_3_1_02, P_4_3_1_02_analyse_svg_grayscale: 
+Corrected sorting of SVGs to match the grayscale of the image
+pixels.
+
+
+----------------------------------------------------------------
 Version 1.0.2 - 6 Dec 2015
 
 P_2_3_6_01, P_2_3_6_02: Corrected the viewBox and 
