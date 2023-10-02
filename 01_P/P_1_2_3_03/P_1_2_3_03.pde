@@ -72,7 +72,7 @@ void draw() {
   float rowHeight = (float)height/(float)rowCount;
 
   // seperate each line in parts  
-  for(int i=rowCount; i>=0; i--) {
+  for(int i=rowCount-1; i>=0; i--) {
     // how many fragments
     int partCount = i+1;
     float[] parts = new float[0];
